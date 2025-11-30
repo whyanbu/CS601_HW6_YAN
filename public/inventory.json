@@ -3,30 +3,40 @@
         "SKU": "001",
         "name": "Apples",
         "quantity": 30,
-        "price": 1.75
+        "price": 1.75,
+        "description": "Fresh red apples with one sliced open, revealing crisp white flesh",
+        "image": "/images/apples.jpg"
     },
     {
         "SKU": "002",
         "name": "Oranges",
         "quantity": 20,
-        "price": 1.25
+        "price": 1.25,
+        "description": "Juicy orange with green leaf and bright citrus segments visible",
+        "image": "/images/oranges.jpg"
     },
     {
         "SKU": "003",
         "name": "Bananas",
         "quantity": 25,
-        "price": 0.98
+        "price": 0.98,
+        "description": "Ripe yellow bananas with natural brown spots, perfectly curved",
+        "image": "/images/bananas.jpg"
     },
     {
         "SKU": "004",
         "name": "Tomatos",
         "quantity": 15,
-        "price": 1.15
+        "price": 1.15,
+        "description": "Fresh red tomatoes with green stems, ripe and ready to eat",
+        "image": "/images/tomatos.jpg"
     },
     {
         "SKU": "005",
         "name": "Lettuce",
         "quantity": 18,
-        "price": 2.50
+        "price": 2.50,
+        "description": "Crisp green lettuce head with fresh, crunchy outer leaves",
+        "image": "/images/lettuce.jpg"
     }
 ]

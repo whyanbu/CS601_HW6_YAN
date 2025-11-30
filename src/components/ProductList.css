@@ -1,4 +1,4 @@
-.inventory-list-wrap {
+.product-list-wrap {
     opacity: 0;
     transform: translateX(100vw);
     transition: transform 0.8s ease-out, opacity 0.8s ease-out;

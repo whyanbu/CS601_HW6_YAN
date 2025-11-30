@@ -1,4 +1,4 @@
-.inventory-item-wrap {
+.product-list-item-wrap {
     display: flex;
     flex-direction: row;
     border: 1px solid lightsteelblue;
@@ -10,14 +10,14 @@
     transition: transform .3s;
 }
 
-.inventory-item-wrap > div {
+.product-list-item-wrap > div {
     width: 80%;
     margin: 0.5rem 1rem;
     padding: 0.5rem 1rem;
     text-align: left;
 }
 
-.inventory-item-wrap:hover {
+.product-list-item-wrap:hover {
     transform: scale(1.02);
     border-color: unset;
     background-color: lightsalmon;
