@@ -3,7 +3,7 @@ import type { Product } from "../types";
 import "./ProductList.css";
 import { useProducts } from "../context/ProductContext";
 
-const InventoryList = () => {
+const ProductList = () => {
 
     const { products, loading } = useProducts();
 
@@ -20,4 +20,4 @@ const InventoryList = () => {
     );
 };
 
-export default InventoryList;
+export default ProductList;

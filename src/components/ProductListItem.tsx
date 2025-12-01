@@ -6,7 +6,7 @@ interface Props {
     product: Product
 }
 
-const InventoryItem = (props: Props) => {
+const ProductListItem = (props: Props) => {
     return (
         <Link to={`/product/${props.product.SKU}`} className="product-list-item-wrap">
             <div>SKU: {props.product.SKU}</div>
@@ -17,4 +17,4 @@ const InventoryItem = (props: Props) => {
     );
 };
 
-export default InventoryItem;
+export default ProductListItem;
