@@ -9,3 +9,14 @@ header {
 header h1 {
     color: white;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    height: 4rem;
+    margin: 1rem 1rem;
+}

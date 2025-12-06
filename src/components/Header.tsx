@@ -5,7 +5,10 @@ const Header = () => {
     return (
         <header>
             <Link to="/">
-                <h1>Local Grocery Store</h1>
+                <div className="flex-container">
+                    <img src="/images/site_logo_transparent.png"/>
+                    <h1>Local Grocery Store</h1>
+                </div>
             </Link> 
         </header>
     );
