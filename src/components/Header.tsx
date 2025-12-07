@@ -6,7 +6,7 @@ const Header = () => {
         <header>
             <Link to="/">
                 <div className="flex-container">
-                    <img src="/images/site_logo_transparent.png"/>
+                    <img src="/images/site_logo_transparent.png" className="header-image"/>
                     <h1>Local Grocery Store</h1>
                 </div>
             </Link> 

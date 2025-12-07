@@ -16,7 +16,7 @@ header h1 {
     align-items: center;
 }
 
-img {
+.header-image {
     height: 4rem;
     margin: 1rem 1rem;
 }

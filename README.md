@@ -10,7 +10,7 @@ Project Structure
 ### Features
 Written with react and Typescript without CSS frameworks.  The initial project is scaffolded using "npm create vite@latest CS601_HW6_YAN -- --template react-ts".  React Router is also added to the project for dynamic routing to the individual detail page.  
 
-Native React API createContext and useContext hook are used for storing the fetched inventory data as global state.  Although there might be a bit of over-engineering, the use of global state can showcase the practical use of React Context and avoid props drilling.  
+As both ProductList.tsx and ProductDetail.tsx require the inventory data, one of the solutions is to up lifting the local state in ProductList.tsx.  Thus, a separate component called ProductLoad.tsx is created for fetching inventory data from json file and pass the data as props to child components ProductList.tsx and ProductDetails.tsx.
 
 ### Installation
 Clone the repository:
@@ -38,6 +38,7 @@ CS601_HW6_YAN
 │   │   ├── bananas.jpg
 │   │   ├── lettuce.jpg
 │   │   ├── oranges.jpg
+│   │   ├── site_logo_transparent.png
 │   │   └── tomatos.jpg
 │   └── inventory.json
 ├── src
@@ -54,9 +55,8 @@ CS601_HW6_YAN
 │   │   ├── ProductList.css
 │   │   ├── ProductList.tsx
 │   │   ├── ProductListItem.css
-│   │   └── ProductListItem.tsx
-│   ├── context
-│   │   └── ProductContext.tsx
+│   │   ├── ProductListItem.tsx
+│   │   └── ProductLoader.tsx
 │   ├── index.css
 │   ├── main.tsx
 │   └── types.ts

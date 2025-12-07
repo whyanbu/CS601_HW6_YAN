@@ -22,3 +22,8 @@
 .btn:hover {
     color: lightyellow;
 }
+
+img.product-image {
+    width: 10rem;
+    height: auto;
+}
