@@ -1,33 +1,29 @@
 import ProductListItem from "./ProductListItem";
 import type { Product } from "../types";
 import "./ProductList.css";
-import ProductLoader from "./ProductLoader";
 import { useEffect, useState } from "react";
 
-const ProductList = () => {
+interface Props {
+    products: Product[]
+}
+
+const ProductList: React.FC<Props> = (props: Props) => {
 
     const [loading, setLoading] = useState(true);
     
+    useEffect(() => {
+        setLoading(false);
+    }, [props.products]);
+
     return (
-        <ProductLoader>
-            {({ products }) => {
-
-                useEffect(() => {
-                    setLoading(false);
-                }, [products]);
-
-                return (
-                    <div>
-                        <h2>Inventory List</h2>
-                        <div className={`product-list-wrap ${loading ? "" : "enter-animation"}`}>
-                            {products.map((product: Product) => (
-                                <ProductListItem key={product.SKU} product={product} />
-                            ))}
-                        </div>
-                    </div>
-                );
-            }}
-        </ProductLoader>
+        <div>
+            <h2>Inventory List</h2>
+            <div className={`product-list-wrap ${loading ? "" : "enter-animation"}`}>
+                {props.products.map((product: Product) => (
+                    <ProductListItem key={product.SKU} product={product} />
+                ))}
+            </div>
+        </div>
     );
 };
 

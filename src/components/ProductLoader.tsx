@@ -2,7 +2,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import type { Product } from "../types";
 
 interface Props {
-    children: (data: { products: Product[] }) => ReactNode;
+    children: (data: { products: Product[] }) => ReactNode
 }
 
 const ProductLoader: React.FC<Props> = (props: Props) => {

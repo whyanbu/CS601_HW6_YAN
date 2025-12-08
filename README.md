@@ -10,7 +10,7 @@ Project Structure
 ### Features
 Written with react and Typescript without CSS frameworks.  The initial project is scaffolded using "npm create vite@latest CS601_HW6_YAN -- --template react-ts".  React Router is also added to the project for dynamic routing to the individual detail page.  
 
-As both ProductList.tsx and ProductDetail.tsx require the inventory data, one of the solutions is to up lift the local state to ProductList.tsx.  Hence, a separate component called ProductLoad.tsx is created for fetching inventory data from json file and pass the data as props to child components ProductList.tsx and ProductDetails.tsx.
+As both ProductList.tsx and ProductDetail.tsx require the inventory data, one of the solutions is to up lift the local state to ProductList.tsx.  Hence, a separate component called ProductLoader.tsx is created for fetching inventory data from json file and pass the data as props to child components ProductList.tsx and ProductDetails.tsx.
 
 ### Installation
 Clone the repository:
